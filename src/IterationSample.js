@@ -49,7 +49,7 @@ class IterationSample extends Component {
         const nameList = this.state.names.map(
             (name, index) => (
                 <li
-                    key={index}
+                    key={index} // 콜백 함수의 인수인 index를 활용하여 데이터가 가진 고유값으로 key값을 설정해준다.
                     onDoubleClick={() => this.handleRemove(index)}
                 >
                     {name}

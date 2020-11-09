@@ -6,7 +6,10 @@ class ScrollBox extends Component {
         // const scrollHeight = this.box.scrollHeight
         // const clientHeight = this.box.clientHeight
         const {scrollHeight, clientHeight} = this.box;
-        this.box.scrollTop = scrollHeight - clientHeight;
+        this.box.scrollTop = scrollHeight - clientHeight; // 스크롤바를 맨 아래쪽으로 내린다.
+        // scrollTop: 세로 스크롤바 위치(0~350)
+        // scrollHeight: 스크롤 박스 내부의 높이(650)
+        // clientheight: 스크롤 박스 외부의 높이(300)
     }
     
     render() {

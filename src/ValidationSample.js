@@ -26,7 +26,7 @@ class ValidationSample extends Component {
         return (
             <div>
                 <input
-                    ref={(ref) => {this.input=ref}}
+                    ref={(ref) => {this.input=ref}} // this.input.focus()
                     type="password"
                     value={this.state.password}
                     onChange={this.handleChange}

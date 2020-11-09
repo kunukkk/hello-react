@@ -10,3 +10,5 @@ class App4 extends Component {
         );
     }
 }
+
+export default App4;

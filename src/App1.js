@@ -20,7 +20,7 @@ class App1 extends Component {
         { /* 요소 밖에서는 주석에 {} 필요 */ }
         <h1>리액트 안녕!</h1>
         <h2>{text}</h2>
-        {condition && '보여주세요'}
+        {condition && '보여주세요'}  {/* JSX 내부의 자바스크립트 표현식에서는 if문을 사용할 수 없다.*/}
         <div
           style={style}
           // self-closed 태그에서만 작동하는 주석
@@ -34,3 +34,4 @@ class App1 extends Component {
   }
 }
 
+export default App1;
