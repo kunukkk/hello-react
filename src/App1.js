@@ -16,8 +16,8 @@ class App1 extends Component {
     };
 
     return (
-      <div className="my-div">
-        { /* 요소 밖에서는 주석에 {} 필요 */ }
+      <div className="my-div"> { /*React에서는 class가 아닌 className*/ }
+        { /* return 안에서는 주석에 {} 필요 */ }
         <h1>리액트 안녕!</h1>
         <h2>{text}</h2>
         {condition && '보여주세요'}  {/* JSX 내부의 자바스크립트 표현식에서는 if문을 사용할 수 없다.*/}

@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+/*
+var React = require('react');
+var Component = React.Component;
+*/
 import ScrollBox from './ScrollBox'
 
 class App5 extends Component {

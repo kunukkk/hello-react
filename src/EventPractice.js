@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class EventPractice extends Component {
-    state = {
-        username: '',
-        message: ''
-    }
-
     // constructor(props) {
     //     // super(props): super는 부모 클래스 생성자를 가리키는데 여기서는 Component
     //     // super(props)를 선언하기 전에는 constructor에서 this를 사용할 수 없다
@@ -28,6 +23,11 @@ class EventPractice extends Component {
     //         message: ''
     //     })
     // }
+
+    state = {
+        username: '',
+        message: ''
+    }
 
     handleChange = (e) => {
         this.setState({
