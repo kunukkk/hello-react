@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
+/*
+var React = require('react');
+var Component = React.Component;
+*/
 
 class App1 extends Component {
   render() {

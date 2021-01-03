@@ -19,14 +19,16 @@ class ValidationSample extends Component {
             clicked: true,
             validated: this.state.password === '0000'
         })
-        this.input.focus();
+        this.flicker.focus();
     }
 
     render() {
         return (
             <div>
                 <input
-                    ref={(ref) => {this.input=ref}} // this.input.focus()
+                    ref={(ref) => {this.flicker=ref}} // id='flicker'
+                    // ref: HTML에서 id를 사용하여 DOM에 이름을 다는 것처럼 리액트 프로젝트 내부에서 DOM에 이름을 다는 방법
+                    //      DOM을 직접적으로 건드려야 할 때 사용
                     type="password"
                     value={this.state.password}
                     onChange={this.handleChange}
